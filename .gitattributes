@@ -1,0 +1,11 @@
+# Git
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Testing files
+.travis.yml export-ignore
+phpunit.xml.dist export-ignore
+tests/ export-ignore
+
+# Other dotfiles
+.editorconfig export-ignore
