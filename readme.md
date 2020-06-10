@@ -1,6 +1,10 @@
 
 # YOURLS Composer Installer
 
+[![Build Status](https://travis-ci.com/YOURLS/composer-installer.svg?branch=master)](https://travis-ci.com/YOURLS/composer-installer)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/YOURLS/composer-installer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/YOURLS/composer-installer/?branch=master)
+<!-- [![Packagist](https://img.shields.io/packagist/v/yourls/composer-installer.svg)](https://packagist.org/packages/yourls/composer-installerurls) -->
+
 > A custom [Composer installer](https://getcomposer.org/doc/articles/custom-installers.md) for **YOURLS Plugins**
 
 > In a nutshell: `composer require joecool/super-yourls-plugin`
