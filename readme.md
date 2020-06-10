@@ -49,6 +49,8 @@ As a plugin coder, this is a simple 2 steps operation: add a `composer.json` and
 
 #### Add a `composer.json` to your plugin
 
+First, your plugin must require PHP 7.2+
+
 The `composer.json` tells everything Composer needs to know about your plugin. The important bits are `"type": "yourls-plugin"` and `"require"` this installer `"yourls/composer-installer"` as a dependency
 
 A minimalist `composer.json` would be for example:
@@ -98,6 +100,11 @@ Making YOURLS plugins compatible with this Composer custom installer is easy and
 * It makes it simple for site managers to quickly scaffold YOURLS sites:  install everything with a simple one-liner: `composer create-project yourls/yourls; composer require ozh/stuff slayer/pentagram` 
 * It makes it easier for plugin coders and plugin users to update plugins
 
+## Future plans
+
+If this project seems to gain traction, we would include it in YOURLS' core. Eventually this would mean even easier YOURLS plugin integration (just have a `composer.json` file with `"type":"yourls-plugin"`) and support for user defined `composer.json` files in the `user/` directory.
+
+If you want this to happen, express your interest, update your plugins, tell the little YOURLS world about it :-*)*
 
 ## Credits
 
