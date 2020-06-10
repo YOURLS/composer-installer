@@ -2,7 +2,8 @@
 # YOURLS Composer Installer
 
 > A custom [Composer installer](https://getcomposer.org/doc/articles/custom-installers.md) for **YOURLS Plugins**
->  In a nutshell: `composer require joecool/super-yourls-plugin`
+
+> In a nutshell: `composer require joecool/super-yourls-plugin`
 
 #### Foreword: install YOURLS with Composer
 
@@ -22,14 +23,14 @@ Note that this merely *downloads* the [latest YOURLS release](https://github.com
 
 As a user you simply need to `require` the plugin in your `composer.json`.
 
-```json
+```js
 {
-    [...]
+    ...
     "require": {
-        [...]
+        ...
         "joecool/super-plugin": "^1.0"
     }
-    [...]
+    ...
 }
 ```
 Even easier, in the commande line, just type:
@@ -52,7 +53,7 @@ The `composer.json` tells everything Composer needs to know about your plugin. T
 
 A minimalist `composer.json` would be for example:
 
-```json
+```js
 {
     "name": "ozh/yourls-composer-plugin",
     "description": "Example of a YOURLS plugin installable with Composer",
@@ -67,7 +68,7 @@ A minimalist `composer.json` would be for example:
 
 Of course, your plugin can completely leverage all Composer features and use any package: simply list them as additional dependencies:
 
-```json
+```js
 {
     "name": "joecool/awesome-plugin",
     "description": "This plugin does this and that",
