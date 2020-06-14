@@ -11,7 +11,7 @@ use Composer\Package\PackageInterface;
  * This class does the actual job of the plugin installer (check if package
  * supports the installer and if so set its install path)
  *
- * @package   YOURLS\ComposerInstaller\PluginInstaller
+ * @package   YOURLS\ComposerInstaller
  * @author    Ozh <ozh@ozh.org>
  * @link      https://github.com/yourls/composer-installer/
  * @license   MIT

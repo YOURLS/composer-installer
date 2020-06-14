@@ -12,8 +12,8 @@ use Symfony\Component\Console\Input\ArrayInput;
 
 /**
  * YOURLS Composer Installer
- * 
- * @package   YOURLS\ComposerInstaller\Commands\CommandBase
+ *
+ * @package   YOURLS\ComposerInstaller
  * @author    Ozh <ozh@ozh.org>
  * @link      https://github.com/yourls/composer-installer/
  * @license   MIT

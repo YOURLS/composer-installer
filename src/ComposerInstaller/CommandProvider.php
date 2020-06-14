@@ -9,8 +9,8 @@ use Composer\Plugin\Capability\CommandProvider as CommandProviderCapability;
 
 /**
  * List all custom commands
- * 
- * @package   YOURLS\ComposerInstaller\CommandProvider
+ *
+ * @package   YOURLS\ComposerInstaller
  * @author    Ozh <ozh@ozh.org>
  * @link      https://github.com/yourls/composer-installer/
  * @license   MIT
@@ -24,7 +24,7 @@ class CommandProvider implements CommandProviderCapability
     {
         return [
             new Commands\CommandAddPlugin(),
-			new Commands\CommandRemovePlugin(),			
+			new Commands\CommandRemovePlugin(),
         ];
     }
 }

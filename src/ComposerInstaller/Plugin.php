@@ -12,11 +12,11 @@ use Composer\Plugin\Capable;
 
 /**
  * YOURLS Composer Installer Plugin
- * 
+ *
  * This class activates the plugin installer and registers the class that will add
  * custom commands
  *
- * @package   YOURLS\ComposerInstaller\Plugin
+ * @package   YOURLS\ComposerInstaller
  * @author    Ozh <ozh@ozh.org>
  * @link      https://github.com/yourls/composer-installer/
  * @license   MIT

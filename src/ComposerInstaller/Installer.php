@@ -13,8 +13,8 @@ use Composer\Repository\InstalledRepositoryInterface;
 /**
  * Extension of Composer's LibraryInstaller that allows a custom function
  * handle after update or install
- * 
- * @package   YOURLS\ComposerInstaller\Installer
+ *
+ * @package   YOURLS\ComposerInstaller
  * @author    Ozh <ozh@ozh.org>
  * @link      https://github.com/yourls/composer-installer/
  * @license   MIT

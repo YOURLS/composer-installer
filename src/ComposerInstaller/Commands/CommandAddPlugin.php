@@ -11,8 +11,8 @@ use Symfony\Component\Console\Input\InputArgument;
 
 /**
  * Defines the 'add-plugin' custom command
- * 
- * @package   YOURLS\ComposerInstaller\Commands\CommandAddPlugin
+ *
+ * @package   YOURLS\ComposerInstaller
  * @author    Ozh <ozh@ozh.org>
  * @link      https://github.com/yourls/composer-installer/
  * @license   MIT
