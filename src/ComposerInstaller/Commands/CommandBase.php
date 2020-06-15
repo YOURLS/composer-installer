@@ -32,7 +32,7 @@ class CommandBase extends BaseCommand
     {
         $application = new Application();
         $application->resetComposer();
-		// Don't auto exit after command so we can chain several ones
+        // Don't auto exit after command so we can chain several ones
         $application->setAutoExit(false);
 
         $input = new ArrayInput($commandParams);

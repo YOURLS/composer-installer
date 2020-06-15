@@ -28,7 +28,7 @@ class CommandRemovePlugin extends CommandBase
         $name = 'remove-plugin';
         $desc = '<warning>Removes</warning> a <info>YOURLS plugin</info>';
         $def  = [ new InputArgument('plugins', InputArgument::IS_ARRAY, 'YOURLS plugin(s) to remove') ];
-		$help = <<<EOT
+        $help = <<<EOT
 Example: <comment>`composer remove-plugin ozh/example-plugin`</comment>
 This command <warning>deletes</warning> plugins from <comment>user/plugins/</comment>, including dependencies,
 and removes them from your <comment>user/composer.json</comment> file.

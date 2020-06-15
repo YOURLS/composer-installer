@@ -28,7 +28,7 @@ class CommandAddPlugin extends CommandBase
         $name = 'add-plugin';
         $desc = '<warning>Downloads</warning> a <info>YOURLS plugin</info> and add it to your <comment>`user/composer.json`</comment>';
         $def  = [ new InputArgument('plugins', InputArgument::IS_ARRAY, 'YOURLS plugin(s) to download') ];
-		$help = <<<EOT
+        $help = <<<EOT
 Example: <comment>`composer add-plugin ozh/example-plugin`</comment>
 This command downloads plugins in the appropriate subfolder of <comment>user/plugins/</comment>, adds them to
 your <comment>user/composer.json</comment> file, and updates dependencies.

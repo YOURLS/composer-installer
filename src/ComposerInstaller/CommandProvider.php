@@ -17,14 +17,14 @@ use Composer\Plugin\Capability\CommandProvider as CommandProviderCapability;
  */
 class CommandProvider implements CommandProviderCapability
 {
-	/**
-	 * Register custom composer commands
-	 */
-	public function getCommands()
+    /**
+     * Register custom composer commands
+     */
+    public function getCommands()
     {
         return [
             new Commands\CommandAddPlugin(),
-			new Commands\CommandRemovePlugin(),
+            new Commands\CommandRemovePlugin(),
         ];
     }
 }
