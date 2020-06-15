@@ -27,4 +27,16 @@ class PluginTest extends TestCase
         $installer = $installationManager->getInstaller('yourls-plugin');
         $this->assertInstanceOf(PluginInstaller::class, $installer);
     }
+
+    public function testCapabilities()
+    {
+        $plugin = new Plugin();
+
+        $this->assertSame(
+            ['Composer\Plugin\Capability\CommandProvider' => 'YOURLS\ComposerInstaller\CommandProvider'],
+            $plugin->getCapabilities()
+        );
+    }
+
+
 }
