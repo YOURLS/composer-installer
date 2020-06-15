@@ -12,7 +12,7 @@ use Symfony\Component\Console\Input\InputArgument;
 /**
  * Defines the 'add-plugin' custom command
  *
- * @package   YOURLS\ComposerInstaller
+ * @package   YOURLS\ComposerInstaller\Commands\CommandRemovePlugin
  * @author    Ozh <ozh@ozh.org>
  * @link      https://github.com/yourls/composer-installer/
  * @license   MIT
@@ -25,20 +25,21 @@ class CommandRemovePlugin extends CommandBase
      */
     protected function configure()
     {
-        $this->setName('remove-plugin')
-             ->setDescription('<warning>Removes</warning> a <info>YOURLS plugin</info>')
-             ->setDefinition(array(
-                new InputArgument('plugins', InputArgument::IS_ARRAY, 'YOURLS plugin(s) to remove'),
-             ))
-             ->setHelp(
-                <<<EOT
+        $name = 'remove-plugin';
+        $desc = '<warning>Removes</warning> a <info>YOURLS plugin</info>';
+        $def  = [ new InputArgument('plugins', InputArgument::IS_ARRAY, 'YOURLS plugin(s) to remove') ];
+		$help = <<<EOT
 Example: <comment>`composer remove-plugin ozh/example-plugin`</comment>
 This command <warning>deletes</warning> plugins from <comment>user/plugins/</comment>, including dependencies,
 and removes them from your <comment>user/composer.json</comment> file.
 Read more at https://github.com/yourls/composer-installer/
 
 EOT;
-            );
+
+        $this->setName($name)
+             ->setDescription($desc)
+             ->setDefinition($def)
+             ->setHelp($help);
     }
 
     /**
@@ -77,7 +78,7 @@ EOT;
 
         // Both command should have returned 0
         if (($require & $update) === 0) {
-            $output->writeln(sprintf('Removed !'));
+            $output->writeln('Removed !');
         }
     }
 }
