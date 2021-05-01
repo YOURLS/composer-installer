@@ -42,4 +42,8 @@ class Plugin implements PluginInterface, Capable
         );
     }
 
+    public function deactivate() {}
+
+    public function uninstall() {}
+
 }
