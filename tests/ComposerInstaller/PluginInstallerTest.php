@@ -29,7 +29,7 @@ class PluginInstallerTest extends InstallerTestCase
     /**
      * Always register the plugin installer
      */
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
         $this->installer = new PluginInstaller($this->io, $this->composer);
