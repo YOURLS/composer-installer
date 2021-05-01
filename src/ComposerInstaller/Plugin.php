@@ -42,8 +42,31 @@ class Plugin implements PluginInterface, Capable
         );
     }
 
-    public function deactivate() {}
+    /**
+     * Remove any hooks from Composer
+     *
+     * @codeCoverageIgnore
+     *
+     * @param \Composer\Composer $composer
+     * @param \Composer\IO\IOInterface $io
+     * @return void
+     */
+    public function deactivate(Composer $composer, IOInterface $io)
+    {
+        // nothing to do
+    }
 
-    public function uninstall() {}
-
+    /**
+     * Prepare the plugin to be uninstalled
+     *
+     * @codeCoverageIgnore
+     *
+     * @param Composer $composer
+     * @param IOInterface $io
+     * @return void
+     */
+    public function uninstall(Composer $composer, IOInterface $io)
+    {
+        // nothing to do
+    }
 }
