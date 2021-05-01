@@ -21,7 +21,7 @@ class InstallerTestCase extends TestCase
     protected $io;
     protected $rootPackage;
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->testDir = str_replace('\\', '/', dirname(__DIR__) . '/tmp');
 
@@ -39,7 +39,7 @@ class InstallerTestCase extends TestCase
         chdir($this->testDir);
     }
 
-    public function tearDown()
+    public function tearDown() : void
     {
         $this->filesystem->removeDirectory($this->testDir);
     }
