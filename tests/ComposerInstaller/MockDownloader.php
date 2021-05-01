@@ -20,7 +20,7 @@ class MockDownloader implements DownloaderInterface
         return 'dist';
     }
 
-    public function download(PackageInterface $package, $path)
+    public function download(PackageInterface $package, $path, ?$prevPackage = NULL)
     {
         // install a fake plugin directory
         $this->filesystem->ensureDirectoryExists($path);

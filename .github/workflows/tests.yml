@@ -1,0 +1,48 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  # Allow manually triggering the workflow.
+  workflow_dispatch:
+  
+jobs:
+  test:
+    name: PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.0']
+        phpunit: ['latest']
+        include:
+        - php: '7.2'
+          phpunit: '8.5.13'
+        - php: '7.3'
+          phpunit: '8.5.13'
+        - php: '7.4'
+          phpunit: '8.5.13'
+          coverage: xdebug
+          flags: '--coverage-clover clover.xml'
+#         - php: '8.1'
+#           experimental: true
+
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use PHP ${{ matrix.php }}
+      uses: shivammathur/setup-php@2.11.0
+      with:
+        php-version: ${{ matrix.php }}
+        tools: phpunit:${{ matrix.phpunit }}
+        coverage: ${{ matrix.coverage }}
+
+    - name: Install
+      run: composer install
+        
+    - name: Test
+      run: phpunit --configuration phpunit.xml.dist ${{ matrix.flags }}
