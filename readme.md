@@ -8,7 +8,7 @@
 
 > In a nutshell: `composer add-plugin joecool/super-yourls-plugin`
 
-#### :construction: &nbsp; Work in progress. This will be included with the next version of YOURLS.
+#### :construction: &nbsp; Work in progress.
 
 [![Build Status](https://travis-ci.com/YOURLS/composer-installer.svg?branch=master)](https://travis-ci.com/YOURLS/composer-installer) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/YOURLS/composer-installer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/YOURLS/composer-installer/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/YOURLS/composer-installer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/YOURLS/composer-installer/?branch=master) [![Packagist](https://img.shields.io/packagist/v/yourls/composer-installer.svg)](https://packagist.org/packages/yourls/composer-installer)
 
