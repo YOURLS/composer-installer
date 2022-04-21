@@ -1,7 +1,7 @@
 
 
 
-# YOURLS Composer Installer 
+# YOURLS Composer Installer [![Listed in Awesome YOURLS!](https://img.shields.io/badge/Awesome-YOURLS-C5A3BE)](https://github.com/YOURLS/awesome-yourls/)
 <p align="center"><img src="https://user-images.githubusercontent.com/223647/84647720-18dba800-af04-11ea-9e7f-c6d623050f4a.png"/></p>
 
 > Keep track of plugins and custom packages added with Composer in a `user/composer.json` file that is left untouched when you update YOURLS.
